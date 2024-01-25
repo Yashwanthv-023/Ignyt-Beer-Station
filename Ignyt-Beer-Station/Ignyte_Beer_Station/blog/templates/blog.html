@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignyte - The Beer Lounge | Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            transition: background-color 0.5s ease;
+        }
+
+        header {
+            background-color: #34495e;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .blog-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .blog {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #3498db;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+
+        .blog:hover {
+            background-color: #2980b9;
+        }
+
+        .blog img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .blog-content {
+            flex: 1;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .date {
+            color: #fff;
+            font-size: 0.8em;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .footer {
+            padding: 20px;
+            background-color: #34495e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-head {
+            color: #ecf0f1;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .footer-navLink {
+            text-decoration: none;
+            color: #ecf0f1;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .footer-navLink:hover {
+            color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ignyte - The Beer Lounge | Blog</h1>
+    </header>
+
+    <div class="blog-container">
+        <div class="blog">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMsyEsqqgsvgvDCTyWWDTMzHz2JPeYefRGutGl7=s680-w680-h510">
+            <div class="blog-content">
+                <h2>Discovering New Flavors</h2>
+                <p>Embark on a taste adventure with our latest beer flavors. From fruity notes to bold hops, explore the diverse and unique taste profiles crafted by our expert brewers. Uncover the secrets behind our brewing process. Dive deep into the art of beer pairing with our culinary experts.</p>
+                <p>Join us for live demonstrations of beer and food pairing techniques. Learn how different flavors complement each other, enhancing your overall dining experience. Discover the science and artistry behind the perfect beer and food match.</p>
+                <p class="date">Published on: February 5, 2024</p>
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipP4mITW5PNZ-1ufWyC00zCKCfhbNTp_FqZh-31i=s680-w680-h510">
+            <div class="blog-content">
+                <h2>Beer and Adventure Pairing</h2>
+                <p>Join us as we pair our signature beers with thrilling adventures. Whether it's hiking, camping, or a beach day, discover the perfect beer companions for your next outdoor escapade. Experience the thrill of beer-tasting in unique settings.</p>
+                <p>Explore our exclusive adventure packages where you can combine your love for beer with exciting outdoor activities. From mountain excursions to beachside picnics, we create memorable experiences that go beyond the ordinary.</p>
+                <p class="date">Published on: February 3, 2024</p>
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNlHWOg-7IEBJzqE576DT52HtT0TUlN8bUJxqht=s680-w680-h510">
+            <div class="blog-content">
+                <h2>Celebrating Milestones with Ignyte</h2>
+                <p>Toast to life's special moments with Ignyte. Learn about our exclusive event packages, personalized brews, and how we turn your celebrations into unforgettable beer experiences. Explore our community spotlight and the exciting events we host.</p>
+                <p>Discover the joy of celebrating birthdays, anniversaries, and achievements at Ignyte. Our event spaces are designed to create a festive atmosphere, and our team is dedicated to ensuring your special day is filled with joy, laughter, and, of course, excellent beer.</p>
+                <p class="date">Published on: February 1, 2024</p>
+            </div>
+        </div>
+
+        <div class="blog">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOuox6n2EpHy1D-CvEuHlT5xs_q3fKc2NfLZ25P=s680-w680-h510">
+            <div class="blog-content">
+                <h2>Cozy Evenings at Ignyte</h2>
+                <p>Experience the warmth of Ignyte's ambiance on a cozy winter evening. Dive into the comfort of our lounge, savoring rich stouts and spiced ales that perfectly complement the season. Join us for our seasonal specials and explore winter-themed brews.</p>
+                <p>Our cozy evenings feature live music, themed decor, and a welcoming atmosphere. Whether you're catching up with friends or enjoying a solo moment of relaxation, Ignyte's cozy evenings provide the perfect setting for warmth, laughter, and delightful beverages.</p>
+                <p class="date">Published on: January 30, 2024</p>
+            </div>
+        </div>
+
+        <!-- Add more blog sections as needed -->
+
+    </div>
+
+    <section class="footer">
+        <p class="unique-footer-head">
+            Ignyte - The Beer Lounge
+        </p>
+        
+        <p class="footer-head">
+            178/6 14th main road, 20th, 50th Main Rd, Kumaraswamy Layout, Bangalore, India, 560078
+            <br>
+            Ph-8217779517
+        </p>
+        <br>
+        <div class="social-links">
+            <a href="https://www.google.com/maps/dir/12.959744,77.6536064/ignyt+the+beer+statiom/@12.93736,77.5266965,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bae1519a60e7f6d:0x743cf4ee0c36a725!2m2!1d77.5640791!2d12.9075462?entry=ttu"
+                class="social-icons" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+            <a href="https://www.instagram.com/ignyt_thebeerstation/" class="social-icons" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="callto:8217779517" class="social-icons" target="_blank"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        
+    </section>
+</body>
+</html>

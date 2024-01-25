@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignyte - The Beer Lounge | Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #34495e;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .gallery .gallery-imgs {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        /* Footer */
+       
+
+        /* Change the background color of the footer */
+        .footer {
+            padding: 20px;
+            background-color: #34495e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Change the text color of the footer */
+        .footer-head {
+            color: #ecf0f1;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        /* Change the color of footer navigation links */
+        .footer-navLink {
+            text-decoration: none;
+            color: #ecf0f1;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .footer-navLink:hover {
+            color: #bdc3c7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ignyte - The Beer Lounge | Gallery</h1>
+    </header>
+
+    <div class="gallery" id="gallery">
+        {% for i in image_numbers %}
+        {% load static %}<img src="{% static 'image' %}{{ i }}.jpg" alt="Image {{ i }}" class="gallery-imgs">
+        {% endfor %}
+    </div>
+</body>
+<section class="footer">
+    <p class="unique-footer-head">
+        Ignyte - The Beer Lounge
+    </p>
+    
+    <p class="footer-head">
+        178/6 14th main road, 20th, 50th Main Rd, Kumaraswamy Layout, Bangalore, India, 560078
+        <br>
+        Ph-8217779517
+    </p>
+    <br>
+    <div class="social-links">
+        <a href="https://www.google.com/maps/dir/12.959744,77.6536064/ignyt+the+beer+statiom/@12.93736,77.5266965,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bae1519a60e7f6d:0x743cf4ee0c36a725!2m2!1d77.5640791!2d12.9075462?entry=ttu"
+            class="social-icons" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+        <a href="https://www.instagram.com/ignyt_thebeerstation/" class="social-icons" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="callto:8217779517" class="social-icons" target="_blank"><i class="fa-solid fa-phone"></i></a>
+    </div>
+    
+</section>
+<style>
+    /* Adjust the styling for the unique footer heading */
+   .unique-footer-head {
+       font-size: 32px; /* Increase the font size */
+       font-weight: bold;
+       color: #e74c3c; /* Change the color to your preference */
+       text-align: center;
+       margin-bottom: 11px;
+   }
+   
+</style>
+
+</html>

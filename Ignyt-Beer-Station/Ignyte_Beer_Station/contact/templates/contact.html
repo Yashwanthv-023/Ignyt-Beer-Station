@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your New Theme - The Lounge</title>
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: 'Roboto', sans-serif;
+            }
+    
+            html {
+                scroll-behavior: smooth;
+            }
+    
+            .nav-section {
+                background-color: #2c3e50;
+                display: flex;
+                align-items: center;
+                box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .2);
+                position: fixed;
+                z-index: 3;
+                width: 100%;
+            }
+    
+            .navig {
+                display: flex;
+                padding: 15px;
+                align-items: center;
+            }
+    
+            .profilePic {
+                width: 56px;
+                height: 50px;
+                border-radius: 50%;
+            }
+    
+            .profilePic:hover {
+                cursor: pointer;
+            }
+    
+            .navul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-left: 15px;
+                width: 100%;
+            }
+    
+            .navItem {
+                list-style: none;
+            }
+    
+            .navLink {
+                text-decoration: none;
+                color: white;
+                padding: 10px;
+                font-size: 20px;
+            }
+    
+            .navLink:hover {
+                color: #3498db;
+            }
+    
+            .burger {
+                width: 33px;
+                height: 50px;
+                display: none;
+                position: absolute;
+                cursor: pointer;
+                right: 5%;
+                top: 15px;
+            }
+    
+            .line {
+                background-color: white;
+                width: 33px;
+                height: 4px;
+                margin: 3px 5px;
+            }
+    
+            .login-btn {
+                position: absolute;
+                right: 20px;
+                background: #3498db;
+                border: none;
+                padding: 10px;
+                border-radius: 50px;
+                color: #fff;
+                font-size: 18px;
+            }
+    
+            .login-btn:hover {
+                background: #2980b9;
+                cursor: pointer;
+            }.footer {
+            padding: 20px;
+            background-color: #34495e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Change the text color of the footer */
+        .footer-head {
+            color: #ecf0f1;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        /* Change the color of footer navigation links */
+        .footer-navLink {
+            text-decoration: none;
+            color: #ecf0f1;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .footer-navLink:hover {
+            color: #bdc3c7;
+        }
+
+        /* Change the color of social icons in the footer */
+        .social-icons {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 18px;
+            margin: 3px;
+        }
+
+        .social-icons:hover {
+            color: #bdc3c7;
+        }
+        .unique-footer-head {
+            font-size: 32px; /* Increase the font size */
+            font-weight: bold;
+            color: #e74c3c; /* Change the color to your preference */
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e; /* Updated footer color */
+            color: #fff;
+            width: 100%;
+        }
+
+        .unique-footer-head {
+            font-size: 32px;
+            font-weight: bold;
+            color: #e74c3c;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .footer-head {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav-section">
+        <!-- Include your header content (navigation, logo, etc.) from the main HTML file -->
+        <!-- ... -->
+        
+    </header>
+
+    <!-- Contact section -->
+    <section class="contact-sec" id="contact-us">
+        <p class="abt-head">Contact Us</p>
+        <div class="contact">
+            <div class="form">
+                <p class="footer-head">
+                    178/6 14th main road, 20th, 50th Main Rd, Kumaraswamy Layout, Bangalore, India, 560078
+                    <br>
+                    Ph-8217779517
+                </p>
+                <br>
+                <div class="social-links">
+                    <a href="https://www.google.com/maps/dir/12.959744,77.6536064/ignyt+the+beer+statiom/@12.93736,77.5266965,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bae1519a60e7f6d:0x743cf4ee0c36a725!2m2!1d77.5640791!2d12.9075462?entry=ttu"
+                        class="social-icons" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                    <a href="https://www.instagram.com/ignyt_thebeerstation/" class="social-icons" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="callto:8217779517" class="social-icons" target="_blank"><i
+                            class="fa-solid fa-phone"></i></a>
+                    <a href="https://linktr.ee/your-linktree" class="social-icons" target="_blank"><i
+                            class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <!-- Include your footer content (footer head, address, social links) from the main HTML file -->
+        <!-- ... -->
+    </section>
+
+    <!-- Include your scripts (JavaScript) from the main HTML file -->
+    <!-- ... -->
+</body>
+
+</html>
